@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product | ShopName</title>
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/product.css" />
+  </head>
+
+  <body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <a href="index.html" class="navbar__logo">ShopName</a>
+      <ul class="navbar__links">
+        <li><a href="#">Men</a></li>
+        <li><a href="#">Women</a></li>
+        <li><a href="#">Accessories</a></li>
+        <li><a href="#">Sale</a></li>
+      </ul>
+      <div class="navbar__icons">
+        <a href="auth.html">Account</a>
+        <a href="cart.html">
+          Cart
+          <span class="navbar__cart-count">0</span>
+        </a>
+      </div>
+    </nav>
+
+    <!-- BREADCRUMB -->
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <span>/</span>
+      <a href="#">Men</a>
+      <span>/</span>
+      <span>Winter Jacket</span>
+    </div>
+
+    <!-- PRODUCT DETAIL -->
+    <section class="product">
+
+      <!-- LEFT — Images -->
+      <div class="product__images">
+
+        <!-- Thumbnails -->
+        <div class="product__thumbnails">
+          <div class="product__thumb active">
+            <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=200" alt="View 1" />
+          </div>
+          <div class="product__thumb">
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=200" alt="View 2" />
+          </div>
+          <div class="product__thumb">
+            <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=200" alt="View 3" />
+          </div>
+        </div>
+
+        <!-- Main Image -->
+        <div class="product__main-image">
+          <img
+            id="mainImage"
+            src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=800"
+            alt="Winter Jacket"
+          />
+        </div>
+
+      </div>
+
+      <!-- RIGHT — Info -->
+      <div class="product__info">
+
+        <!-- Brand -->
+        <p class="product__brand">ShopName</p>
+
+        <!-- Name -->
+        <h1 class="product__name">Winter Jacket Pro</h1>
+
+        <!-- Price -->
+        <div class="product__price-wrap">
+          <span class="product__price--old">$220</span>
+          <span class="product__price">$189</span>
+          <span class="product__discount">15% OFF</span>
+        </div>
+
+        <!-- Divider -->
+        <div class="product__divider"></div>
+
+        <!-- Color -->
+        <div class="product__option">
+          <p class="product__option-title">
+            Color: <span class="product__option-value">Black</span>
+          </p>
+          <div class="product__colors">
+            <div class="product__color active" style="background:#1a1a1a"></div>
+            <div class="product__color" style="background:#8B4513"></div>
+            <div class="product__color" style="background:#2F4F4F"></div>
+          </div>
+        </div>
+
+        <!-- Size -->
+        <div class="product__option">
+          <p class="product__option-title">
+            Size: <span class="product__option-value">M</span>
+          </p>
+          <div class="product__sizes">
+            <button class="product__size">XS</button>
+            <button class="product__size">S</button>
+            <button class="product__size active">M</button>
+            <button class="product__size">L</button>
+            <button class="product__size">XL</button>
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="product__divider"></div>
+
+        <!-- Buttons -->
+        <div class="product__buttons">
+          <button class="product__btn-cart">Add to Cart</button>
+          <button class="product__btn-wishlist">♡</button>
+        </div>
+
+        <!-- Features -->
+        <ul class="product__features">
+          <li>✓ Free shipping on orders over $50</li>
+          <li>✓ Free returns within 30 days</li>
+          <li>✓ Secure checkout</li>
+        </ul>
+
+      </div>
+
+    </section>
+
+    <script src="js/global.js"></script>
+    <script src="js/product.js"></script>
+  </body>
+</html>
