@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- ================================
+    META TAGS
+    Important information about the page
+    that the browser needs to know
+    ================================ -->
+
+    <!-- tells browser this file is HTML5 -->
+    <!DOCTYPE html>
+
+    <!-- tells browser the language is English -->
+    <meta charset="UTF-8" />
+
+    <!-- makes the website look good on mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- title shown on browser tab -->
+    <title>ShopName</title>
+
+    <!-- ================================
+    CSS FILES
+    We load global.css first because
+    every page needs it
+    ================================ -->
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/home.css" />
+  </head>
+
+  <body>
+
+    <!-- ================================
+    NAVBAR
+    ================================ -->
+    <nav class="navbar">
+
+      <!-- LEFT — Logo -->
+      <a href="index.html" class="navbar__logo">ShopName</a>
+
+      <!-- MIDDLE — Navigation Links -->
+      <ul class="navbar__links">
+        <li><a href="#">Men</a></li>
+        <li><a href="#">Women</a></li>
+        <li><a href="#">Accessories</a></li>
+        <li><a href="#">Sale</a></li>
+      </ul>
+
+      <!-- RIGHT — Icons -->
+      <div class="navbar__icons">
+        <a href="auth.html">Account</a>
+        <a href="cart.html">
+          Cart
+          <span class="navbar__cart-count">0</span>
+        </a>
+      </div>
+
+    </nav>
+
+    <!-- END NAVBAR -->
+     <!-- ================================
+    HERO SECTION
+    ================================ -->
+    <section class="hero">
+
+      <!-- Background Image -->
+      <img
+        class="hero__image"
+        src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=1600"
+        alt="Hero Image"
+      />
+
+      <!-- Dark overlay on top of image -->
+      <div class="hero__overlay"></div>
+
+      <!-- Text content on top of overlay -->
+      <div class="hero__content">
+        <p class="hero__subtitle">New Collection 2026</p>
+        <h1 class="hero__title">Designed For The Elements</h1>
+        <a href="#" class="hero__btn">Shop Now</a>
+      </div>
+
+    </section>
+    <!-- END HERO -->
+
+    <!-- JavaScript file loaded at the 
+    BOTTOM so HTML loads first -->
+    <script src="js/global.js"></script>
+    <script src="js/home.js"></script>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+/* ================================
+   HOME.CSS
+   Styles only for the homepage
+================================ */
+
+/* ================================
+   1. HERO SECTION
+================================ */
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+}
+
+.hero__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.hero__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.hero__content {
+  position: absolute;
+  bottom: var(--space-xxl);
+  left: var(--space-xxl);
+}
+
+.hero__subtitle {
+  font-size: var(--font-small);
+  font-weight: 400;
+  color: #ffffff;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: var(--space-md);
+}
+
+.hero__title {
+  font-size: var(--font-xxlarge);
+  font-weight: 300;
+  color: #ffffff;
+  line-height: 1.2;
+  margin-bottom: var(--space-lg);
+  max-width: 500px;
+}
+
+.hero__btn {
+  display: inline-block;
+  padding: var(--space-md) var(--space-xl);
+  background-color: #ffffff;
+  color: var(--color-primary);
+  font-size: var(--font-small);
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: var(--transition);
+}
+
+.hero__btn:hover {
+  background-color: var(--color-primary);
+  color: #ffffff;
+}
