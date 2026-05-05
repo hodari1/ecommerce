@@ -70,3 +70,112 @@
   background-color: var(--color-primary);
   color: #ffffff;
 }
+
+/* ================================
+   2. PRODUCTS SECTION
+================================ */
+
+.products {
+  padding: var(--space-xxl) var(--space-xxl);
+}
+
+.products__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-xl);
+}
+
+.products__title {
+  font-size: var(--font-large);
+  font-weight: 300;
+  color: var(--color-primary);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.products__link {
+  font-size: var(--font-small);
+  font-weight: 400;
+  color: var(--color-primary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 1px solid var(--color-primary);
+  padding-bottom: 2px;
+  transition: var(--transition);
+}
+
+.products__link:hover {
+  color: var(--color-gray-dark);
+  border-color: var(--color-gray-dark);
+}
+
+.products__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-md);
+}
+
+.product-card {
+  cursor: pointer;
+}
+
+.product-card__image-wrap {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--color-gray-light);
+  aspect-ratio: 3/4;
+  margin-bottom: var(--space-md);
+}
+
+.product-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.product-card:hover .product-card__image {
+  transform: scale(1.05);
+}
+
+.product-card__badge {
+  position: absolute;
+  top: var(--space-md);
+  left: var(--space-md);
+  background-color: var(--color-accent);
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 4px 8px;
+}
+
+.product-card__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product-card__name {
+  font-size: var(--font-normal);
+  font-weight: 400;
+  color: var(--color-primary);
+}
+
+.product-card__price {
+  font-size: var(--font-normal);
+  font-weight: 400;
+  color: var(--color-gray-dark);
+}
+
+.product-card__price--old {
+  text-decoration: line-through;
+  margin-right: var(--space-sm);
+  font-size: var(--font-small);
+}
+
+.product-card__price--sale {
+  color: var(--color-accent);
+}
